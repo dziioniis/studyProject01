@@ -18,9 +18,12 @@ export class HomeComponent implements OnInit {
     this.userService.logout(Number(localStorage.getItem('id')));
   } 
 
+  tokenIsValid():void{   
+    this.userService.tokenIsValid();
+  }  
+   
   setNewTokens():void{  
-    this.user.refreshToken=localStorage.getItem('refreshToken')
-    this.userService.setNewTokens(this.user);
+    this.userService.setNewTokens();
   }
 
 }

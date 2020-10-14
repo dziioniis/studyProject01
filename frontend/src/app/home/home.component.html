@@ -1,12 +1,32 @@
-<div class="form-group">   
-    <br>
-    <div class="row">  
-       <div class="col-md-3"></div>
-       <input type="submit"class="btnSubmit" (click)="logOut()"  value="LogOut" />
-    </div>  
-    <br>
-    <div class="row">  
-     <div class="col-md-3"></div>
-     <input type="submit"   class="btnSubmit" value="refreshToken" (click)="setNewTokens()" />
-  </div>
- </div>
+
+ 
+ <div class="container login-container">
+   <div class="row">
+      <div class="col-md-3"></div>
+       <div class="col-md-6 login-form-2">
+           <div class="login-logo">
+               <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+           </div>
+           <h3 >Login to Chatter</h3>
+               <div class="form-group">   
+                  <br>
+                  <div class="row">  
+                     <div class="col-md-3"></div>
+                     <input type="submit"class="btnSubmit" value="tokenIsValid" (click)="tokenIsValid()"  />
+                  </div>  
+                  <br> 
+                  <div class="row">  
+                     <div class="col-md-3"></div>
+                     <input type="submit"class="btnSubmit" value="refreshing" (click)="setNewTokens()"  />
+                  </div>  
+                  <br>
+                  <div class="row">  
+                   <div class="col-md-3"></div>
+                   <input type="submit" routerLink="/registration"  class="btnSubmit"(click)="logOut()"  value="Logout"  />
+                </div>
+               </div>
+               <div class="form-group">
+               </div>
+       </div>
+   </div>
+</div>

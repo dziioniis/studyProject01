@@ -9,7 +9,7 @@
                     </div>
                     <h3 >Login to Chatter</h3>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your username *" maxlength="25" required pattern="[a-zA-Z0-9_]{6,15}" #username="ngModel" name="username" [(ngModel)]="user.username" />
+                            <input type="text" class="form-control" placeholder="Your username *" maxlength="25" required pattern="[a-zA-Z0-9_]{6,15}" #username="ngModel" name="email" [(ngModel)]="user.email" />
                         </div>
                         <div [hidden]="username.valid || username.untouched" class="alert alert-danger">
                             Pls set valid username
